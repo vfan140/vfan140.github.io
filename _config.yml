@@ -11,6 +11,5 @@ markdown: kramdown
 kramdown:
   input: GFM
 future:      true
-highlighter:    true
 # Amount of posts to show on home page
 paginate: 5
