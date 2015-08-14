@@ -1,5 +1,5 @@
 ﻿
-```javascript
+```js
 require(['mui/uitl'],fucntion(){
 
 });
