@@ -3,10 +3,14 @@ title: vfan140's Blog
 email: vfan140@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://vfan140.github.io/" # the base hostname & protocol for your site
 github_username:  vfan140
 encoding: utf-8
 # Build settings
 markdown: kramdown
 kramdown:
   input: GFM
+future:      true
+highlighter:    true
+# Amount of posts to show on home page
+paginate: 5
