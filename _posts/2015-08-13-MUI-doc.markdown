@@ -4,17 +4,12 @@ title:  "Welcome to Jekyll!"
 date:   2015-08-13 22:10:17
 categories: jekyll update
 ---
+
 # MUI组件帮助文档
-
-标签（空格分隔）： 帮助文档
-
----
 
 ```javascript
 require(['mui/uitl'],fucntion(){
-    
+
 });
 
 ```
-
-
