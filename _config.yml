@@ -1,5 +1,5 @@
 # Site settings
-title: vfan140's Blog
+title: zifan
 email: vfan140@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -7,19 +7,23 @@ url: "http://vfan140.github.io" # the base hostname & protocol for your site
 #url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
 github_username:  vfan140
 encoding: utf-8
-# Build settings
-markdown: redcarpet
 
+#owner
+owner:
+    name : 周梓凡
+    avatar : avatar.jpg
+    email : vfan140@gmail.com
+    github : https://github.com/vfan140
+
+# markdown settings
+markdown: redcarpet
 kramdown:
   input: GFM
-
 redcarpet:
     extensions: ["no_intra_emphasis","fenced_code_blocks", "autolink", "tables", "strikethrough","with_toc_data"]
 
 future:      true
-
 # Amount of post to show on home page
 paginate: 5
-
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: Asia/Shanghai
