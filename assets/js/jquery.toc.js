@@ -13,7 +13,7 @@
  *   http://www.gnu.org/licenses/gpl.html
  */
 (function($) {
-    var toggleHTML = '<div id="toctitle"><h2>Contents</h2> <span class="toctoggle">[<a id="toctogglelink" class="internal" href="#">hide</a>]</span></div>';
+    var toggleHTML = '<div id="toctitle"><h2>导航</h2> <span class="toctoggle">[<a id="toctogglelink" class="internal" href="#">隐藏</a>]</span></div>';
     var tocContainerHTML = '<div id="toc-container"><table class="toc" id="toc"><tbody><tr><td>%1<ul>%2</ul></td></tr></tbody></table></div>';
 
     function createLevelHTML(anchorId, tocLevel, tocSection, tocNumber, tocText, tocInner) {
@@ -33,9 +33,9 @@
             anchorPrefix: 'tocAnchor-',
             showAlways: false,
             saveShowStatus: true,
-            contentsText: 'Contents',
-            hideText: 'hide',
-            showText: 'show'};
+            contentsText: '导航',
+            hideText: '隐藏',
+            showText: '展开'};
 
         if (settings) {
             $.extend(config, settings);
@@ -98,7 +98,7 @@
 
             $('#toctogglelink').click(function() {
                 var ul = $($('#toc ul')[0]);
-                
+
                 if (ul.is(':visible')) {
                     ul.hide();
                     $(this).text(config.showText);
@@ -119,7 +119,7 @@
 
             if (config.saveShowStatus && $.cookie('toc-hide')) {
                 var ul = $($('#toc ul')[0]);
-                
+
                 ul.hide();
                 $('#toctogglelink').text(config.showText);
                 $('#toc').addClass('tochidden');

@@ -1,7 +1,0 @@
-﻿
-```javascript
-require(['mui/uitl'],fucntion(){
-
-});
-
-```

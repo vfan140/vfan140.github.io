@@ -14,10 +14,11 @@
  */
 
 #toc, .toc, .mw-warning {
-    background-color: #F9F9F9;
+    background-color: #717171;
     border: 1px solid #AAAAAA;
     font-size: 95%;
     padding: 5px;
+    color: white;
 }
 #toc h2, .toc h2 {
     border: medium none;
@@ -50,4 +51,10 @@
 
 #toc-container {
 	margin-bottom: 10px;
+    position: fixed;
+    right: 10px;
+    top:25px;
+}
+#toc-container a{
+    color: white;
 }
