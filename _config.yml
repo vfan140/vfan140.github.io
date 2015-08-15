@@ -8,12 +8,17 @@ github_username:  vfan140
 encoding: utf-8
 # Build settings
 markdown: redcarpet
+
 kramdown:
   input: GFM
 
 redcarpet:
-    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
+    extensions: ["no_intra_emphasis","fenced_code_blocks", "autolink", "tables", "strikethrough","with_toc_data"]
 
 future:      true
-# Amount of posts to show on home page
+
+# Amount of post to show on home page
 paginate: 5
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai

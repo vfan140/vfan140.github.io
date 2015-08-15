@@ -60,7 +60,15 @@
   </footer>
 </div><!-- /.footer-wrapper -->
 
-{% include scripts.html %}	        
+{% include scripts.html %}
+
+<link href="{{ site.url }}/assets/css/toc.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="{{ site.url }}/assets/js/jquery.toc.js"></script>
+<script type="text/javascript">
+    $('#post').toc({
+        showAlways:true
+    });
+</script>
 
 </body>
 </html>
