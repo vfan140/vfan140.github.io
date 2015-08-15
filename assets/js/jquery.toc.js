@@ -49,11 +49,14 @@
         var tocContainer = $(this);
 
         tocContainer.find('h1').each(function() {
+
+            if($(this).hasClass('entry-title')) return;
             var levelHTML = '';
             var innerSection = 0;
             var h1 = $(this);
 
             h1.nextUntil('h1').filter('h2').each(function() {
+
                 ++innerSection;
                 var anchorId = config.anchorPrefix + tocLevel + '-' + tocSection + '-' +  + innerSection;
                 $(this).attr('id', anchorId);
