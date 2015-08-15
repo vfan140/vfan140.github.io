@@ -17,7 +17,7 @@
     var tocContainerHTML = '<div id="toc-container"><table class="toc" id="toc"><tbody><tr><td>%1<ul>%2</ul></td></tr></tbody></table></div>';
 
     function createLevelHTML(anchorId, tocLevel, tocSection, tocNumber, tocText, tocInner) {
-        var link = '<a href="#%1"><span class="tocnumber">%2</span> <span class="toctext">%3</span></a>%4'
+        var link = '<a href="#%1"><span class="tocnumber">%2</span>.<span class="toctext">%3</span></a>%4'
             .replace('%1', anchorId)
             .replace('%2', tocNumber)
             .replace('%3', tocText)
